@@ -1,0 +1,14 @@
+debian/60xdg_path-on-session etc/X11/Xsession.d/
+etc/
+usr/bin/
+usr/lib/
+usr/sbin/
+usr/share/applications/
+usr/share/icons/
+usr/share/locale
+usr/share/mate-2.0
+usr/share/mate
+usr/share/mdm/
+usr/share/omf/
+usr/share/pixmaps/
+usr/share/polkit-1/

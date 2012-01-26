@@ -1,0 +1,2 @@
+version=2
+http://ftp.mate.org/pub/mate/sources/mdm/([\d\.]+)[0-9]/mdm-([\d\.]+)\.tar\.gz

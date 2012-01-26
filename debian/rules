@@ -1,0 +1,88 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_AUTO_UPDATE_LIBTOOL=pre
+DEB_AUTO_UPDATE_ACLOCAL=1.11
+DEB_AUTO_UPDATE_AUTOCONF=1
+DEB_AUTO_UPDATE_AUTOHEADER=1
+DEB_AUTO_UPDATE_AUTOMAKE=1.11
+
+DEB_CONFIGURE_SCRIPT_ENV += X_PATH="/usr/bin" \
+			    X_SERVER_PATH="/usr/bin" \
+			    X_SERVER="/usr/bin/Xorg"
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
+		--enable-ipv6=yes \
+		--with-at-spi-registryd-directory=/usr/lib/at-spi \
+		--with-default-path=/usr/local/bin:/usr/bin:/bin:/usr/games \
+		--with-working-directory=/var/lib/gdm
+		--with-xauth-dir=/var/run/gdm \
+		--with-pid-file=/var/run/mdm.pid \
+		--with-log-dir=/var/log/mdm \
+		--with-screenshot-dir=/var/run/mdm/greeter \
+		--with-user=mdm \
+		--with-group=mdm \
+		--with-pam-domain=mdm \
+		--with-lang-file=/etc/default/locale \
+		--with-incomplete-locales
+
+DEB_DH_INSTALLINIT_ARGS = --no-start
+
+ifneq (,$(filter debug,$(DEB_BUILD_OPTIONS)))
+	DEB_CONFIGURE_EXTRA_FLAGS += --enable-debug
+endif
+
+DEB_MAKE_EXTRA_ARGS += authdir=/var/lib/mdm3
+
+ifeq (linux,$(DEB_HOST_ARCH_OS))
+	DEB_CONFIGURE_EXTRA_FLAGS += --with-selinux
+else
+	DEB_CONFIGURE_EXTRA_FLAGS += --without-selinux
+endif
+
+binary-install/mdm::
+	install -m644 debian/mdm-autologin.pam debian/mdm/etc/pam.d/mdm-autologin
+	install -m644 debian/mdm.pam debian/mdm/etc/pam.d/mdm
+	install -D -m644 debian/xterm.desktop debian/mdm/usr/share/xsessions/xterm.desktop
+	install -D -m644 debian/xsession.desktop debian/mdm/usr/share/xsessions/xsession.desktop
+	# move custom.conf to the examples
+	mkdir -p debian/mdm/usr/share/doc/mdm/examples
+	mv debian/mdm/etc/mdm/custom.conf debian/mdm/usr/share/doc/mdm/examples
+	mv debian/mdm/usr/lib/matecomponent/servers/MATE_FastUserSwitchApplet.server debian/mdm/usr/lib/matecomponent/servers/MATE_FastUserSwitchAppletMdm.server
+	# install default settings
+	mkdir debian/mdm/var/lib/mdm/.mateconf.defaults
+	install -m 664 debian/%mateconf-tree.xml debian/mdm/var/lib/mdm/.mateconf.defaults
+	# we install onboard (debian/onboard.desktop), and do not have gok
+	install -m 644 debian/onboard.desktop debian/mdm/usr/share/mdm/autostart/LoginWindow/
+	rm debian/mdm/usr/share/mdm/autostart/LoginWindow/gok.desktop
+	rm -rf debian/tmp/var/lib/mdm/.m*
+	rm -rf debian/tmp/var/run
+	mkdir -p debian/mdm/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mdm/usr/share/mateconf/schemas/mate-display-manager.schemas" \
+		--domain mate-display-manager debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
+
+INFILES := $(wildcard debian/*.desktop.in)
+OUTFILES := $(INFILES:.desktop.in=.desktop)
+
+%.desktop: %.desktop.in
+	intltool-merge -d debian/po-up $< $@
+
+build/mdm3:: $(OUTFILES)
+
+MANPAGES := $(patsubst %.pod,%,$(wildcard debian/*.pod))
+
+common-build-arch:: $(MANPAGES)
+
+clean::
+	rm -f $(MANPAGES)
+	rm -f $(OUTFILES)
+
+%: %.pod
+	pod2man --section=$(shell echo $@ | sed 's/.*\.//') \
+		--release="MATE $(DEB_MATE_VERSION)" \
+		--center="Debian GNU/Linux" \
+		$< \
+		| sed -e 's/debian:://' >$@

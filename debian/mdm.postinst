@@ -1,0 +1,66 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+THIS_PACKAGE=mdm
+DEFAULT_DISPLAY_MANAGER_FILE=/etc/X11/default-display-manager
+
+# creating mdm group if he isn't already there
+if ! getent group mdm >/dev/null; then
+        addgroup --system mdm
+fi
+
+# creating mdm user if he isn't already there
+if ! getent passwd mdm >/dev/null; then
+        adduser --system --ingroup mdm --home /var/lib/mdm mdm
+        usermod -c "Mate Display Manager" mdm
+        usermod -d "/var/lib/mdm"          mdm
+        usermod -g "mdm"                   mdm
+        usermod -s "/bin/false"            mdm
+fi
+
+# Creating nopasswdlogin group if he isn't already there.
+# That enables the password-less login feature in the users-admin
+# tool of the mate-system-tools for users that belong to it,
+# and which is working thanks to MDM's PAM policy.
+if ! getent group nopasswdlogin >/dev/null; then
+        addgroup --system nopasswdlogin
+fi
+
+if [ -d /var/lib/mdm ]; then
+  chown mdm:mdm /var/lib/mdm
+  chown -R mdm:mdm /var/lib/mdm/.mateconf*
+  chmod 0750 /var/lib/mdm
+fi
+
+# debconf is not a registry, so we only fiddle with the default file if it
+# does not exist
+if [ ! -e $DEFAULT_DISPLAY_MANAGER_FILE ]; then
+  if db_get shared/default-x-display-manager; then
+    # workaround debconf passthru bug (#379198)
+    if [ -z "$RET" ]; then
+      $RET="$THIS_PACKAGE"
+    fi
+    if [ "$THIS_PACKAGE" != "$RET" ]; then
+      echo "Please be sure to run \"dpkg --configure $RET\"."
+    fi
+    if db_get "$RET"/daemon_name; then
+      echo "$RET" > $DEFAULT_DISPLAY_MANAGER_FILE
+    fi
+  fi
+fi
+# debconf hangs if mdm gets started below without this
+db_stop || true
+
+PID=$(status "mdm" 2>/dev/null | awk '/[0-9]$/ { print $NF }')
+[ -z "$PID" ] || kill -HUP $PID
+
+if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
+    dpkg-maintscript-helper rm_conffile /etc/X11/Xsession.d/60xdg_path-on-session 3.0.4-0ubuntu4 -- "$@"
+fi
+
+#DEBHELPER#
+
+exit 0

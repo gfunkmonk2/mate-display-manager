@@ -1,0 +1,327 @@
+<oaf_info>
+  <oaf_server iid="OAFIID:MATE_FastUserSwitchApplet_Factory" type="exe"
+              location="/usr/lib/mate-display-manager/mdm-user-switch-applet">
+
+    <oaf_attribute name="repo_ids" type="stringv">
+      <item value="IDL:MateComponent/GenericFactory:1.0"/>
+      <item value="IDL:MateComponent/Unknown:1.0"/>
+    </oaf_attribute>
+    <oaf_attribute name="name" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-ar" type="string" value="معمل بريمج مبدّل المستخدم"/>
+    <oaf_attribute name="name-as" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-ast" type="string" value="Fábrica de la miniaplicación del seleutor d&apos;usuarios"/>
+    <oaf_attribute name="name-be" type="string" value="Фабрыка аплета &quot;Пераключэнне карыстальніка&quot;"/>
+    <oaf_attribute name="name-be@latin" type="string" value="Fabryka apleta pieraklučeńnia karystalnikaŭ"/>
+    <oaf_attribute name="name-bg" type="string" value="Фабрика за аплета за смяна на потребител"/>
+    <oaf_attribute name="name-bn" type="string" value="ব্যবহারকারী পরিবর্তন কারী অ্যাপলেট ফ্যাক্টরি"/>
+    <oaf_attribute name="name-bn_IN" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-br" type="string" value="Labouradeg an arloadig da gemmañ an arveriad"/>
+    <oaf_attribute name="name-ca" type="string" value="Fàbrica de la miniaplicació del commutador d&apos;usuari"/>
+    <oaf_attribute name="name-ca@valencia" type="string" value="Fàbrica de la miniaplicació del commutador d&apos;usuari"/>
+    <oaf_attribute name="name-crh" type="string" value="Qullanıcı Almaştırıcı Uyğulamaçıq Fabrikası"/>
+    <oaf_attribute name="name-cs" type="string" value="Generátor appletu přepínaní uživatelů"/>
+    <oaf_attribute name="name-da" type="string" value="Fabrik til brugerskiftepanelprogram"/>
+    <oaf_attribute name="name-de" type="string" value="Benutzerwechsel-Applet-Fabrik"/>
+    <oaf_attribute name="name-el" type="string" value="Εργοστάσιο εφαρμογιδίου αλλαγής χρήστη"/>
+    <oaf_attribute name="name-en@shaw" type="string" value="𐑿𐑟𐑼 𐑕𐑢𐑦𐑗𐑻 𐑨𐑐𐑤𐑩𐑑 𐑓𐑨𐑒𐑑𐑼𐑦"/>
+    <oaf_attribute name="name-en_GB" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-eo" type="string" value="Aplikaĵeta fabriko por ŝanĝilo de uzantoj"/>
+    <oaf_attribute name="name-es" type="string" value="Fábrica de la miniaplicación del selector de usuarios"/>
+    <oaf_attribute name="name-et" type="string" value="Kasutajate vahel lülitumise rakendi Factory"/>
+    <oaf_attribute name="name-eu" type="string" value="Erabiltzaile-aldatzaile miniaplikazioaren fabrika"/>
+    <oaf_attribute name="name-fi" type="string" value="Käyttäjän vaihdin-sovelman tehdas"/>
+    <oaf_attribute name="name-fr" type="string" value="Fabrique de l&apos;outil de changement d&apos;utilisateur"/>
+    <oaf_attribute name="name-gl" type="string" value="Factoría de miniaplicativo para cambiar de usuario"/>
+    <oaf_attribute name="name-gu" type="string" value="વપરાશકર્તા સ્વીચર એપલેટ ફેક્ટરી"/>
+    <oaf_attribute name="name-gv" type="string" value="Thie obbree claaghyn Caghlaader Ymmydeyr"/>
+    <oaf_attribute name="name-he" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-hi" type="string" value="उपयोक्ता स्विचर एप्पलेट फैक्टरी"/>
+    <oaf_attribute name="name-hu" type="string" value="Felhasználóváltás kisalkalmazás factory"/>
+    <oaf_attribute name="name-id" type="string" value="Pabrik Aplet Pengalih Pengguna"/>
+    <oaf_attribute name="name-it" type="string" value="Factory dell&apos;applet di cambio utente"/>
+    <oaf_attribute name="name-ja" type="string" value="ユーザ切り替えアプレットのファクトリ"/>
+    <oaf_attribute name="name-kk" type="string" value="Пайдаланушыларды ауыстырғышы"/>
+    <oaf_attribute name="name-kn" type="string" value="ಬಳಕೆದಾರನನ್ನು ಬದಲಾಯಿಸುವ ಫ್ಯಾಕ್ಟರಿ ಅನ್ವಯ"/>
+    <oaf_attribute name="name-ko" type="string" value="사용자 바꾸기 애플릿 팩토리"/>
+    <oaf_attribute name="name-ku" type="string" value="Fabrikaya applet a guherkera bikarhêner"/>
+    <oaf_attribute name="name-lt" type="string" value="Naudotojo keitiklio įtaiso gamykla"/>
+    <oaf_attribute name="name-lv" type="string" value="Lietotāju pārslēgšanas sīklietotņu ražotne"/>
+    <oaf_attribute name="name-mai" type="string" value="प्रयोक्ता स्विचर एप्पलेट फैक्टरी"/>
+    <oaf_attribute name="name-mk" type="string" value="Фабрика за аплети за сменување на корисник"/>
+    <oaf_attribute name="name-ml" type="string" value="യൂസര്‍ സ്വിച്ചര്‍ ലഘുപ്രയോഗ ഫാക്ടറി"/>
+    <oaf_attribute name="name-mr" type="string" value="वापरकर्ता बदलाव ऍपलेट फॅक्टरी"/>
+    <oaf_attribute name="name-nb" type="string" value="Fabrikk for panelprogram for brukerbytte"/>
+    <oaf_attribute name="name-nl" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="name-nn" type="string" value="Factory for brukarbyteprogram"/>
+    <oaf_attribute name="name-oc" type="string" value="Fabrica d&apos;applet pel cambiament d&apos;utilizaire"/>
+    <oaf_attribute name="name-or" type="string" value="ଚାଳକ ବଦଳାଉଥିବା ଆପଲେଟ କାରଖାନା"/>
+    <oaf_attribute name="name-pa" type="string" value="ਯੂਜ਼ਰ ਸਵਿੱਚਰ ਐਪਲਿਟ ਫੈਕਟਰੀ"/>
+    <oaf_attribute name="name-pl" type="string" value="Generator apletu przełącznika kont użytkowników"/>
+    <oaf_attribute name="name-ps" type="string" value="کارن ونجوونکی څېرمه کړنلار فېکټري"/>
+    <oaf_attribute name="name-pt" type="string" value="Fábrica da Applet de Alternador de Utilizadores"/>
+    <oaf_attribute name="name-pt_BR" type="string" value="Fábrica do miniaplicativo alternador de usuários"/>
+    <oaf_attribute name="name-ro" type="string" value="Șablon miniaplicație"/>
+    <oaf_attribute name="name-ru" type="string" value="Фабрика апплета переключателя пользователей"/>
+    <oaf_attribute name="name-sk" type="string" value="Vytváracie rozhranie pre aplet Prepínač používateľov"/>
+    <oaf_attribute name="name-sl" type="string" value="Tovarna apletov preklopnika med uporabniki"/>
+    <oaf_attribute name="name-sq" type="string" value="Fabrika e miniaplikativit të shkëmbimit të përdoruesëve"/>
+    <oaf_attribute name="name-sr" type="string" value="Погон програмчета за промену корисника"/>
+    <oaf_attribute name="name-sr@latin" type="string" value="Pogon programčeta za promenu korisnika"/>
+    <oaf_attribute name="name-sv" type="string" value="Panelprogramsfabrik för Användarväxlare"/>
+    <oaf_attribute name="name-ta" type="string" value="பயனர் மாற்றி ஆப்லெட் பாக்டெரி"/>
+    <oaf_attribute name="name-te" type="string" value="వినియోగదారి మార్చుదాని ఆప్లెట్ ఫాక్టరీ"/>
+    <oaf_attribute name="name-th" type="string" value="โรงงานแอพเพล็ตสลับผู้ใช้"/>
+    <oaf_attribute name="name-tr" type="string" value="Kullanıcı Değiştirici Uygulamacık Üreticisi"/>
+    <oaf_attribute name="name-ug" type="string" value="ئىشلەتكۈچى ئالماشتۇرغۇ قوللانچاق زاۋۇتى"/>
+    <oaf_attribute name="name-uk" type="string" value="Фабрика аплету перемикання користувачів"/>
+    <oaf_attribute name="name-vi" type="string" value="Bộ tạo Tiểu dụng Chuyển đổi Người dùng"/>
+    <oaf_attribute name="name-zh_CN" type="string" value="用户切换小程序工厂"/>
+    <oaf_attribute name="name-zh_HK" type="string" value="使用者切換面板程式工廠"/>
+    <oaf_attribute name="name-zh_TW" type="string" value="使用者切換面板程式工廠"/>
+    <oaf_attribute name="description" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-ar" type="string" value="معمل بريمج مبدّل المستخدم"/>
+    <oaf_attribute name="description-as" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-ast" type="string" value="Fábrica de la miniaplicación del seleutor d&apos;usuarios"/>
+    <oaf_attribute name="description-be" type="string" value="Фабрыка аплета &quot;Пераключэнне карыстальніка&quot;"/>
+    <oaf_attribute name="description-be@latin" type="string" value="Fabryka apleta pieraklučeńnia karystalnikaŭ"/>
+    <oaf_attribute name="description-bg" type="string" value="Фабрика за аплета за смяна на потребител"/>
+    <oaf_attribute name="description-bn" type="string" value="ব্যবহারকারী পরিবর্তন কারী অ্যাপলেট ফ্যাক্টরি"/>
+    <oaf_attribute name="description-bn_IN" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-br" type="string" value="Labouradeg an arloadig da gemmañ an arveriad"/>
+    <oaf_attribute name="description-ca" type="string" value="Fàbrica de la miniaplicació del commutador d&apos;usuari"/>
+    <oaf_attribute name="description-ca@valencia" type="string" value="Fàbrica de la miniaplicació del commutador d&apos;usuari"/>
+    <oaf_attribute name="description-crh" type="string" value="Qullanıcı Almaştırıcı Uyğulamaçıq Fabrikası"/>
+    <oaf_attribute name="description-cs" type="string" value="Generátor appletu přepínaní uživatelů"/>
+    <oaf_attribute name="description-da" type="string" value="Fabrik til brugerskiftepanelprogram"/>
+    <oaf_attribute name="description-de" type="string" value="Benutzerwechsel-Applet-Fabrik"/>
+    <oaf_attribute name="description-el" type="string" value="Εργοστάσιο εφαρμογιδίου αλλαγής χρήστη"/>
+    <oaf_attribute name="description-en@shaw" type="string" value="𐑿𐑟𐑼 𐑕𐑢𐑦𐑗𐑻 𐑨𐑐𐑤𐑩𐑑 𐑓𐑨𐑒𐑑𐑼𐑦"/>
+    <oaf_attribute name="description-en_GB" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-eo" type="string" value="Aplikaĵeta fabriko por ŝanĝilo de uzantoj"/>
+    <oaf_attribute name="description-es" type="string" value="Fábrica de la miniaplicación del selector de usuarios"/>
+    <oaf_attribute name="description-et" type="string" value="Kasutajate vahel lülitumise rakendi Factory"/>
+    <oaf_attribute name="description-eu" type="string" value="Erabiltzaile-aldatzaile miniaplikazioaren fabrika"/>
+    <oaf_attribute name="description-fi" type="string" value="Käyttäjän vaihdin-sovelman tehdas"/>
+    <oaf_attribute name="description-fr" type="string" value="Fabrique de l&apos;outil de changement d&apos;utilisateur"/>
+    <oaf_attribute name="description-gl" type="string" value="Factoría de miniaplicativo para cambiar de usuario"/>
+    <oaf_attribute name="description-gu" type="string" value="વપરાશકર્તા સ્વીચર એપલેટ ફેક્ટરી"/>
+    <oaf_attribute name="description-gv" type="string" value="Thie obbree claaghyn Caghlaader Ymmydeyr"/>
+    <oaf_attribute name="description-he" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-hi" type="string" value="उपयोक्ता स्विचर एप्पलेट फैक्टरी"/>
+    <oaf_attribute name="description-hu" type="string" value="Felhasználóváltás kisalkalmazás factory"/>
+    <oaf_attribute name="description-id" type="string" value="Pabrik Aplet Pengalih Pengguna"/>
+    <oaf_attribute name="description-it" type="string" value="Factory dell&apos;applet di cambio utente"/>
+    <oaf_attribute name="description-ja" type="string" value="ユーザ切り替えアプレットのファクトリ"/>
+    <oaf_attribute name="description-kk" type="string" value="Пайдаланушыларды ауыстырғышы"/>
+    <oaf_attribute name="description-kn" type="string" value="ಬಳಕೆದಾರನನ್ನು ಬದಲಾಯಿಸುವ ಫ್ಯಾಕ್ಟರಿ ಅನ್ವಯ"/>
+    <oaf_attribute name="description-ko" type="string" value="사용자 바꾸기 애플릿 팩토리"/>
+    <oaf_attribute name="description-ku" type="string" value="Fabrikaya applet a guherkera bikarhêner"/>
+    <oaf_attribute name="description-lt" type="string" value="Naudotojo keitiklio įtaiso gamykla"/>
+    <oaf_attribute name="description-lv" type="string" value="Lietotāju pārslēgšanas sīklietotņu ražotne"/>
+    <oaf_attribute name="description-mai" type="string" value="प्रयोक्ता स्विचर एप्पलेट फैक्टरी"/>
+    <oaf_attribute name="description-mk" type="string" value="Фабрика за аплети за сменување на корисник"/>
+    <oaf_attribute name="description-ml" type="string" value="യൂസര്‍ സ്വിച്ചര്‍ ലഘുപ്രയോഗ ഫാക്ടറി"/>
+    <oaf_attribute name="description-mr" type="string" value="वापरकर्ता बदलाव ऍपलेट फॅक्टरी"/>
+    <oaf_attribute name="description-nb" type="string" value="Fabrikk for panelprogram for brukerbytte"/>
+    <oaf_attribute name="description-nl" type="string" value="User Switcher Applet Factory"/>
+    <oaf_attribute name="description-nn" type="string" value="Factory for brukarbyteprogram"/>
+    <oaf_attribute name="description-oc" type="string" value="Fabrica d&apos;applet pel cambiament d&apos;utilizaire"/>
+    <oaf_attribute name="description-or" type="string" value="ଚାଳକ ବଦଳାଉଥିବା ଆପଲେଟ କାରଖାନା"/>
+    <oaf_attribute name="description-pa" type="string" value="ਯੂਜ਼ਰ ਸਵਿੱਚਰ ਐਪਲਿਟ ਫੈਕਟਰੀ"/>
+    <oaf_attribute name="description-pl" type="string" value="Generator apletu przełącznika kont użytkowników"/>
+    <oaf_attribute name="description-ps" type="string" value="کارن ونجوونکی څېرمه کړنلار فېکټري"/>
+    <oaf_attribute name="description-pt" type="string" value="Fábrica da Applet de Alternador de Utilizadores"/>
+    <oaf_attribute name="description-pt_BR" type="string" value="Fábrica do miniaplicativo alternador de usuários"/>
+    <oaf_attribute name="description-ro" type="string" value="Șablon miniaplicație"/>
+    <oaf_attribute name="description-ru" type="string" value="Фабрика апплета переключателя пользователей"/>
+    <oaf_attribute name="description-sk" type="string" value="Vytváracie rozhranie pre aplet Prepínač používateľov"/>
+    <oaf_attribute name="description-sl" type="string" value="Tovarna apletov preklopnika med uporabniki"/>
+    <oaf_attribute name="description-sq" type="string" value="Fabrika e miniaplikativit të shkëmbimit të përdoruesëve"/>
+    <oaf_attribute name="description-sr" type="string" value="Погон програмчета за промену корисника"/>
+    <oaf_attribute name="description-sr@latin" type="string" value="Pogon programčeta za promenu korisnika"/>
+    <oaf_attribute name="description-sv" type="string" value="Panelprogramsfabrik för Användarväxlare"/>
+    <oaf_attribute name="description-ta" type="string" value="பயனர் மாற்றி ஆப்லெட் பாக்டெரி"/>
+    <oaf_attribute name="description-te" type="string" value="వినియోగదారి మార్చుదాని ఆప్లెట్ ఫాక్టరీ"/>
+    <oaf_attribute name="description-th" type="string" value="โรงงานแอพเพล็ตสลับผู้ใช้"/>
+    <oaf_attribute name="description-tr" type="string" value="Kullanıcı Değiştirici Uygulamacık Üreticisi"/>
+    <oaf_attribute name="description-ug" type="string" value="ئىشلەتكۈچى ئالماشتۇرغۇ قوللانچاق زاۋۇتى"/>
+    <oaf_attribute name="description-uk" type="string" value="Фабрика аплету перемикання користувачів"/>
+    <oaf_attribute name="description-vi" type="string" value="Bộ tạo Tiểu dụng Chuyển đổi Người dùng"/>
+    <oaf_attribute name="description-zh_CN" type="string" value="用户切换小程序工厂"/>
+    <oaf_attribute name="description-zh_HK" type="string" value="使用者切換面板程式工廠"/>
+    <oaf_attribute name="description-zh_TW" type="string" value="使用者切換面板程式工廠"/>
+    <oaf_attribute name="matecomponent:environment" type="stringv">
+       <item value="DBUS_SESSION_BUS_ADDRESS"/>
+     <oaf_attribute name="bugzilla:bugzilla" type="string" value="MATE"/>
+     <oaf_attribute name="bugzilla:product" type="string" value="mdm"/>
+     <oaf_attribute name="bugzilla:component" type="string" value="general"/>
+     <oaf_attribute name="bugzilla:version" type="string" value="1.0.8"/>
+     <oaf_attribute name="bugzilla:other_binaries" type="string" value="mdm-user-switch-applet"/>
+    </oaf_attribute>
+  </oaf_server>
+
+  <oaf_server iid="OAFIID:MATE_FastUserSwitchApplet" type="factory"
+              location="OAFIID:MATE_FastUserSwitchApplet_Factory">
+
+    <oaf_attribute name="repo_ids" type="stringv">
+      <item value="IDL:MATE/Vertigo/MatePanelAppletShell:1.0"/>
+      <item value="IDL:MateComponent/Control:1.0"/>
+      <item value="IDL:MateComponent/Unknown:1.0"/>
+    </oaf_attribute>
+    <oaf_attribute name="name" type="string" value="User Switcher"/>
+    <oaf_attribute name="name-af" type="string" value="Gebruikerwisselaar"/>
+    <oaf_attribute name="name-ar" type="string" value="مبدّل المستخدم"/>
+    <oaf_attribute name="name-as" type="string" value="User Switcher"/>
+    <oaf_attribute name="name-ast" type="string" value="Seleutor d&apos;usuarios"/>
+    <oaf_attribute name="name-be" type="string" value="Пераключальнік карыстальнікаў"/>
+    <oaf_attribute name="name-be@latin" type="string" value="Pieraklučeńnie karystalnikaŭ"/>
+    <oaf_attribute name="name-bg" type="string" value="Смяна на потребител"/>
+    <oaf_attribute name="name-bn" type="string" value="ব্যবহারকারী অ্যাকাউন্ট পরিবর্তনকারী"/>
+    <oaf_attribute name="name-bn_IN" type="string" value="ব্যবহারকারী অ্যাকাউন্ট পরিবর্তন ব্যবস্থা"/>
+    <oaf_attribute name="name-br" type="string" value="Trec&apos;haoler arveriad"/>
+    <oaf_attribute name="name-ca" type="string" value="Commutador d&apos;usuari"/>
+    <oaf_attribute name="name-ca@valencia" type="string" value="Commutador d&apos;usuari"/>
+    <oaf_attribute name="name-crh" type="string" value="Qullanıcı Almaştırıcı"/>
+    <oaf_attribute name="name-cs" type="string" value="Přepínání uživatelů"/>
+    <oaf_attribute name="name-da" type="string" value="Brugerskifter"/>
+    <oaf_attribute name="name-de" type="string" value="Benutzerwechsel"/>
+    <oaf_attribute name="name-el" type="string" value="Εναλλαγή χρηστών"/>
+    <oaf_attribute name="name-en@shaw" type="string" value="𐑿𐑟𐑼 𐑕𐑢𐑦𐑗𐑻"/>
+    <oaf_attribute name="name-en_GB" type="string" value="User Switcher"/>
+    <oaf_attribute name="name-eo" type="string" value="Ŝanĝilo de uzantoj"/>
+    <oaf_attribute name="name-es" type="string" value="Selector de usuarios"/>
+    <oaf_attribute name="name-et" type="string" value="Kasutajate vahel lülituja"/>
+    <oaf_attribute name="name-eu" type="string" value="Erabiltzaile-aldatzailea"/>
+    <oaf_attribute name="name-fi" type="string" value="Käyttäjän vaihdin"/>
+    <oaf_attribute name="name-fr" type="string" value="Outil de changement d&apos;utilisateur"/>
+    <oaf_attribute name="name-ga" type="string" value="Athraitheoir an Úsáideora"/>
+    <oaf_attribute name="name-gl" type="string" value="Selector de usuarios"/>
+    <oaf_attribute name="name-gu" type="string" value="વપરાશકર્તા સ્વીચર"/>
+    <oaf_attribute name="name-gv" type="string" value="Caghlaader Ymmydeyr"/>
+    <oaf_attribute name="name-he" type="string" value="מחליף משתמשים"/>
+    <oaf_attribute name="name-hi" type="string" value="उपयोक्ता स्विचर"/>
+    <oaf_attribute name="name-hu" type="string" value="Felhasználóváltás"/>
+    <oaf_attribute name="name-id" type="string" value="Pengalih Pengguna"/>
+    <oaf_attribute name="name-it" type="string" value="Cambio utente"/>
+    <oaf_attribute name="name-ja" type="string" value="ユーザの切り替え"/>
+    <oaf_attribute name="name-kk" type="string" value="Пайдаланушыларды ауыстырғышы"/>
+    <oaf_attribute name="name-kn" type="string" value="ಬಳಕೆದಾರ ಬದಲಾವಣೆಗಾರ"/>
+    <oaf_attribute name="name-ko" type="string" value="사용자 바꾸기"/>
+    <oaf_attribute name="name-ku" type="string" value="Guherkera bikarhêner"/>
+    <oaf_attribute name="name-lt" type="string" value="Naudotojo keitiklis"/>
+    <oaf_attribute name="name-lv" type="string" value="Lietotāju pārslēdzējs"/>
+    <oaf_attribute name="name-mai" type="string" value="प्रयोक्ता स्विचर"/>
+    <oaf_attribute name="name-mk" type="string" value="Менувач на корисници"/>
+    <oaf_attribute name="name-ml" type="string" value="യൂസര്‍ സ്വിച്ചര്‍"/>
+    <oaf_attribute name="name-mr" type="string" value="वापरकर्ता बदलावकर्ता"/>
+    <oaf_attribute name="name-nb" type="string" value="Bytt bruker"/>
+    <oaf_attribute name="name-nds" type="string" value="Brukerwessler"/>
+    <oaf_attribute name="name-nl" type="string" value="Wisselen van gebruiker"/>
+    <oaf_attribute name="name-nn" type="string" value="Brukarbyte"/>
+    <oaf_attribute name="name-oc" type="string" value="Esplech de cambiament d&apos;utilizaire"/>
+    <oaf_attribute name="name-or" type="string" value="ଚାଳକ ପରିବର୍ତ୍ତକ"/>
+    <oaf_attribute name="name-pa" type="string" value="ਯੂਜ਼ਰ ਸਵਿੱਚਰ"/>
+    <oaf_attribute name="name-pl" type="string" value="Przełącznik kont użytkowników"/>
+    <oaf_attribute name="name-ps" type="string" value="کارن ونجوونکی"/>
+    <oaf_attribute name="name-pt" type="string" value="Alternador de Utilizadores"/>
+    <oaf_attribute name="name-pt_BR" type="string" value="Alternador de usuário"/>
+    <oaf_attribute name="name-ro" type="string" value="Schimbare utilizator"/>
+    <oaf_attribute name="name-ru" type="string" value="Переключатель пользователей"/>
+    <oaf_attribute name="name-sk" type="string" value="Prepínač používateľov"/>
+    <oaf_attribute name="name-sl" type="string" value="Preklopnik med uporabniki"/>
+    <oaf_attribute name="name-sq" type="string" value="Shkëmbyes përdoruesish"/>
+    <oaf_attribute name="name-sr" type="string" value="Промена корисника"/>
+    <oaf_attribute name="name-sr@latin" type="string" value="Promena korisnika"/>
+    <oaf_attribute name="name-sv" type="string" value="Användarväxlare"/>
+    <oaf_attribute name="name-ta" type="string" value="பயனர் மாற்றி"/>
+    <oaf_attribute name="name-te" type="string" value="వినియోగదారుని మార్చునది"/>
+    <oaf_attribute name="name-th" type="string" value="แอพเพล็ตสลับผู้ใช้"/>
+    <oaf_attribute name="name-tr" type="string" value="Kullanıcı Değiştirici"/>
+    <oaf_attribute name="name-ug" type="string" value="ئىشلەتكۈچى ئالماشتۇرغۇ"/>
+    <oaf_attribute name="name-uk" type="string" value="Перемикач користувачів"/>
+    <oaf_attribute name="name-vi" type="string" value="Bộ Chuyển đổi Người dùng"/>
+    <oaf_attribute name="name-zh_CN" type="string" value="用户切换器"/>
+    <oaf_attribute name="name-zh_HK" type="string" value="使用者切換程式"/>
+    <oaf_attribute name="name-zh_TW" type="string" value="使用者切換程式"/>
+    <oaf_attribute name="description" type="string" value="A menu to quickly switch between users"/>
+    <oaf_attribute name="description-af" type="string" value="&apos;n Kieslys om vinnig tussen gebruikers te wissel"/>
+    <oaf_attribute name="description-ar" type="string" value="قائمة للتبديل السريع بين المستخدمين"/>
+    <oaf_attribute name="description-as" type="string" value="ব্যৱহাৰকৰোঁতাৰ মাজত শীঘ্ৰে সলনি কৰিবলৈ তালিকা"/>
+    <oaf_attribute name="description-ast" type="string" value="Un menú pa camudar rápidamente ente usuarios"/>
+    <oaf_attribute name="description-be" type="string" value="Меню для хуткага пераключэння памі карыстальнікамі"/>
+    <oaf_attribute name="description-be@latin" type="string" value="Menu dla chutkaha pieraklučeńnia karystalnikaŭ"/>
+    <oaf_attribute name="description-bg" type="string" value="Меню за бърза смяна на потребител"/>
+    <oaf_attribute name="description-bn" type="string" value="ভিন্ন ব্যবহারকারী অ্যাকাউন্টে দ্রুত পরিবর্তন করতে ব্যবহৃত একটি মেনু"/>
+    <oaf_attribute name="description-bn_IN" type="string" value="ভিন্ন ব্যবহারকারী অ্যাকাউন্টে দ্রুত পরিবর্তন করতে ব্যবহৃত একটি মেনু"/>
+    <oaf_attribute name="description-br" type="string" value="Ul lañser evit kemmañ buan etre an arveriaded"/>
+    <oaf_attribute name="description-ca" type="string" value="Un menú per commutar ràpidament d&apos;usuari"/>
+    <oaf_attribute name="description-ca@valencia" type="string" value="Un menú per commutar ràpidament d&apos;usuari"/>
+    <oaf_attribute name="description-crh" type="string" value="Qullanıcılar arasında çabik almaşmaq içün bir menü"/>
+    <oaf_attribute name="description-cs" type="string" value="Nabídka rychlého přepínání mezi uživateli"/>
+    <oaf_attribute name="description-da" type="string" value="En menu til hurtigt at skifte mellem brugere"/>
+    <oaf_attribute name="description-de" type="string" value="Ein Menü zum schnellen Wechsel zwischen Benutzern"/>
+    <oaf_attribute name="description-el" type="string" value="Ένα μενού για την γρήγορη εναλλαγή χρηστών"/>
+    <oaf_attribute name="description-en@shaw" type="string" value="𐑩 𐑥𐑧𐑯𐑿 𐑑 𐑒𐑢𐑦𐑒𐑤𐑦 𐑕𐑢𐑦𐑗 𐑚𐑦𐑑𐑢𐑰𐑯 𐑿𐑟𐑼𐑟"/>
+    <oaf_attribute name="description-en_GB" type="string" value="A menu to quickly switch between users"/>
+    <oaf_attribute name="description-eo" type="string" value="Menuo por rapide ŝanĝi inter uzantoj"/>
+    <oaf_attribute name="description-es" type="string" value="Un menú para cambiar rápidamente entre usuarios"/>
+    <oaf_attribute name="description-et" type="string" value="Menüü kiireks kasutajate vahel lülitumiseks"/>
+    <oaf_attribute name="description-eu" type="string" value="Erabiltzaileen artean bizkor aldatzeko menua"/>
+    <oaf_attribute name="description-fi" type="string" value="Valikko, josta voit vaihtaa käyttäjää nopeasti"/>
+    <oaf_attribute name="description-fr" type="string" value="Un menu permettant de basculer rapidement entre les utilisateurs"/>
+    <oaf_attribute name="description-ga" type="string" value="Roghchlár chun athrú idir úsáideoirí go tapa"/>
+    <oaf_attribute name="description-gl" type="string" value="Un menú para cambiar rapidamente entre usuarios"/>
+    <oaf_attribute name="description-gu" type="string" value="વપરાશકર્તાઓ વચ્ચે તરત જ બદલવા માટે મેનુ"/>
+    <oaf_attribute name="description-gv" type="string" value="Ny rolley dy caghlaa ymmydeyryn tappee"/>
+    <oaf_attribute name="description-he" type="string" value="תפריט להחלפה מהירה בין המשתמשים"/>
+    <oaf_attribute name="description-hi" type="string" value="उपयोक्ता के बीच तेजी से बदलने के लिए मेन्यू"/>
+    <oaf_attribute name="description-hu" type="string" value="Menü a felhasználók közti gyors váltáshoz"/>
+    <oaf_attribute name="description-id" type="string" value="Menu untuk berpindah pengguna dengan cepat"/>
+    <oaf_attribute name="description-it" type="string" value="Un menù per passare rapidamente da un utente all&apos;altro"/>
+    <oaf_attribute name="description-ja" type="string" value="複数のユーザを素早く切り替えるアプレットです"/>
+    <oaf_attribute name="description-kk" type="string" value="Пайдаланушылар арасында тез ауысу мәзірі"/>
+    <oaf_attribute name="description-kn" type="string" value="ಬಳಕೆದಾರರ ನಡುವೆ ತ್ವರಿತವಾಗಿ ಬದಲಾಯಿಸಲು ಒಂದು ಮೆನು"/>
+    <oaf_attribute name="description-ko" type="string" value="사용자를 빠르게 바꾸는 메뉴"/>
+    <oaf_attribute name="description-ku" type="string" value="Menûyeke ji zûzûka bikarhêner biguhere"/>
+    <oaf_attribute name="description-lt" type="string" value="Meniu greitam naudotojo keitimui"/>
+    <oaf_attribute name="description-lv" type="string" value="Izvēlne, lai ātri pārslēgtos starp lietotājiem"/>
+    <oaf_attribute name="description-mai" type="string" value="प्रयोक्ताक बीच तेजीसँ बदलब क&apos;लेल मेनू"/>
+    <oaf_attribute name="description-mk" type="string" value="Мени за брзо менување на корисници"/>
+    <oaf_attribute name="description-ml" type="string" value="ഉപയോക്താക്കള്‍ തമ്മില്‍ പെട്ടെന്നു് മാറുവാനുള്ള മെനു"/>
+    <oaf_attribute name="description-mr" type="string" value="वापरकर्ता बदलविण्याकरीताचे मेन्यु"/>
+    <oaf_attribute name="description-nb" type="string" value="En meny for å bytte mellom brukere"/>
+    <oaf_attribute name="description-nl" type="string" value="Een menu om snel te wisselen tussen gebruikers"/>
+    <oaf_attribute name="description-nn" type="string" value="Ein meny for å byta raskt mellom brukarar"/>
+    <oaf_attribute name="description-oc" type="string" value="Un menut que vos permet de bascuolar rapidemant entre los utilizaires"/>
+    <oaf_attribute name="description-or" type="string" value="ଚାଳକମାନଙ୍କ ମଧ୍ୟରେ ତୁରନ୍ତ ସୁଇଚ କରିବା ପାଇଁ ଗୋଟିଏ ତାଲିକା"/>
+    <oaf_attribute name="description-pa" type="string" value="ਯੂਜ਼ਰ ਵਿੱਚ ਤੁਰੰਤ ਸਵਿੱਚ ਕਰਨ ਲਈ ਇੱਕ ਮੇਨੂ"/>
+    <oaf_attribute name="description-pl" type="string" value="Menu do szybkiego przełączania się między kontami użytkowników"/>
+    <oaf_attribute name="description-ps" type="string" value="په اسانۍ سره د کارنانو ونجولو لپاره يوه غورنۍ"/>
+    <oaf_attribute name="description-pt" type="string" value="Um menu para alternar rapidamente entre utilizadores"/>
+    <oaf_attribute name="description-pt_BR" type="string" value="Um menu para alternar rapidamente entre usuários"/>
+    <oaf_attribute name="description-ro" type="string" value="Un meniu pentru schimbarea utilizatorului"/>
+    <oaf_attribute name="description-ru" type="string" value="Меню для быстрого переключения пользователей"/>
+    <oaf_attribute name="description-sk" type="string" value="Ponuka na rýchle prepnutie medzi používateľmi"/>
+    <oaf_attribute name="description-sl" type="string" value="Meni za hitro preklapljanje med uporabniki"/>
+    <oaf_attribute name="description-sq" type="string" value="Një menu për të kaluar me lehtësi nga një përdorues tek tjetri"/>
+    <oaf_attribute name="description-sr" type="string" value="Мени за брзу промену корисника"/>
+    <oaf_attribute name="description-sr@latin" type="string" value="Meni za brzu promenu korisnika"/>
+    <oaf_attribute name="description-sv" type="string" value="En meny för att snabbt växla mellan användare"/>
+    <oaf_attribute name="description-ta" type="string" value="பயனர்களுக்கு இடையில் ஒரு மெனு விரைவாக மாற்றப்பட்டது."/>
+    <oaf_attribute name="description-te" type="string" value="వినియోగదారుల మధ్య త్వరగా మారుటకు ఒక మెనూ"/>
+    <oaf_attribute name="description-th" type="string" value="เมนูสำหรับสลับผู้ใช้เครื่องอย่างเร็ว"/>
+    <oaf_attribute name="description-tr" type="string" value="Kullanıcılar arasında hızlı bir şekilde geçiş yapmak için bir menü"/>
+    <oaf_attribute name="description-ug" type="string" value="ئىشلەتكۈچىلەرنى چاپسان ئالماشتۇرۇش تىزىملىكى"/>
+    <oaf_attribute name="description-uk" type="string" value="Меню для швидкого перемикання користувачів"/>
+    <oaf_attribute name="description-vi" type="string" value="Một trình đơn để chuyển đổi nhanh giữa các người dùng"/>
+    <oaf_attribute name="description-zh_CN" type="string" value="一个可在用户间快速切换的菜单"/>
+    <oaf_attribute name="description-zh_HK" type="string" value="用來快速切換使用者的選單"/>
+    <oaf_attribute name="description-zh_TW" type="string" value="用來快速切換使用者的選單"/>
+    <oaf_attribute name="panel:icon" type="string" value="stock_people"/>
+    <oaf_attribute name="bugzilla:bugzilla" type="string" value="MATE"/>
+    <oaf_attribute name="bugzilla:product" type="string" value="mdm"/>
+    <oaf_attribute name="bugzilla:component" type="string" value="general"/>
+    <oaf_attribute name="bugzilla:version" type="string" value="1.0.8"/>
+    <oaf_attribute name="bugzilla:other_binaries" type="string" value="mdm-user-switch-applet"/>
+  </oaf_server>
+</oaf_info>

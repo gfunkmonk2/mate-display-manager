@@ -1,0 +1,54 @@
+#!/bin/sh -e
+
+rm_conffile() {
+  PKGNAME="mdm"
+  CONFFILE="$1"
+
+  if [ -e "$CONFFILE" ]; then
+   md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+   old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME | sed -n -e \"\\\\' $CONFFILE'{s/ obsolete$//;s/.* //p}\"`"
+   if [ "$md5sum" != "$old_md5sum" ]; then
+     echo "Obsolete conffile $CONFFILE has been modified by you."
+     echo "Saving as $CONFFILE.dpkg-bak ..."
+     mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+   else
+     echo "Removing obsolete conffile $CONFFILE ..."
+     rm -f "$CONFFILE"
+   fi
+ fi
+}
+
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ] && \
+    # earlier releases used /etc/mdm/mdm.conf-custom, but upstream uses
+    # custom.conf
+    dpkg --compare-versions "$2" le-nl "2.26.1-0ubuntu5"; then
+    if [ -f /etc/mdm/mdm.conf-custom ]; then
+	echo "Renaming /etc/mdm/mdm.conf-custom to /etc/mdm/custom.conf" >&2
+	mv /etc/mdm/mdm.conf-custom /etc/mdm/custom.conf
+    fi
+
+    # migrate autologin settings
+    if ! egrep -q '^(Automatic|Timed)Login(Enable|Delay|)=' /etc/mdm/custom.conf; then
+	settings="`egrep '^((Automatic|Timed)LoginEnable=[^f])|^((Automatic|Timed)Login=.)|^TimedLoginDelay=[^3]' /etc/mdm/mdm.conf`" || true
+	if [ -n "$settings" ]; then
+	    echo '[daemon]' >> /etc/mdm/custom.conf
+	    echo "$settings" >> /etc/mdm/custom.conf
+	fi
+    fi
+
+    # obsolete conffiles
+    rm_conffile /etc/mdm/mdm.conf
+    rm_conffile /etc/mdm/locale.conf
+    rm_conffile /etc/mdm/mdmprefetchlist
+    rm_conffile /etc/mdm/XKeepsCrashing
+    rm_conffile /etc/mdm/modules/AccessKeyMouseEvents
+    rm_conffile /etc/mdm/modules/factory-AccessKeyMouseEvents
+    rm_conffile /etc/mdm/modules/AccessDwellMouseEvents
+    rm_conffile /etc/mdm/modules/factory-AccessDwellMouseEvents
+fi
+
+if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
+    dpkg-maintscript-helper rm_conffile /etc/X11/Xsession.d/60xdg_path-on-session 3.0.4-0ubuntu4 -- "$@"
+fi
+
+#DEBHELPER#

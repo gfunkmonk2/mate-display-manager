@@ -1,0 +1,50 @@
+mate-display-manager (1.0.8-1) oneiric; urgency=low
+
+  * Patches from 2.32.1 from Ubuntu and updates from 2.32.2 source.
+
+ -- Matt Rinsch <gfunkmonk@gmail.com>  Tue, 17 Jan 2012 19:24:42 -0500
+
+mate-display-manager (1.0.7-2) oneiric; urgency=low
+
+  * init
+
+ -- Matt Rinsch <gfunkmonk@gmail.com>  Sat, 07 Jan 2012 07:44:26 -0500
+
+mate-display-manager (1.0.7-2) unstable; urgency=low
+
+  * Merged some stuff from debian gdm3.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 21 Nov 2011 01:31:35 +0100
+
+mate-display-manager (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switched to autogen.sh.
+  * Renamed binary package "mdm".
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 20 Nov 2011 20:40:34 +0100
+
+mate-display-manager (1.0.2-4) unstable; urgency=low
+
+  * Fixed insserv.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 16:29:10 +0100
+
+mate-display-manager (1.0.2-3) unstable; urgency=low
+
+  * Updated debian/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 15:01:39 +0100
+
+mate-display-manager (1.0.2-2) unstable; urgency=low
+
+  * Fixed and debianized init script.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 03:04:05 +0100
+
+mate-display-manager (1.0.2-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 13:39:42 +0100
+

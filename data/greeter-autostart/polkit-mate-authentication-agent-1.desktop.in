@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+_Name=PolicyKit Authentication Agent
+Exec=/usr/lib/policykit-1-mate/polkit-mate-authentication-agent-1
+OnlyShowIn=MATE;

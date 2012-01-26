@@ -1,0 +1,37 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/org/mate/DisplayManager/Settings">
+  <interface name="org.mate.DisplayManager.Settings">
+    <method name="GetValue">
+      <arg name="key" direction="in" type="s"/>
+      <arg name="value" direction="out" type="s"/>
+    </method>
+    <method name="GetSoundEnabled">
+      <arg name="enabled" direction="out" type="b"/>
+    </method>
+    <method name="GetFaceBrowserEnabled">
+      <arg name="enabled" direction="out" type="b"/>
+    </method>
+    <method name="Unlock">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+      <arg name="is_unlocked" direction="out" type="b"/>
+    </method>
+    <method name="SetValue">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+      <arg name="key" direction="in" type="s"/>
+      <arg name="value" direction="in" type="s"/>
+    </method>
+    <method name="SetSoundEnabled">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+      <arg name="enabled" direction="in" type="b"/>
+    </method>
+    <method name="SetFaceBrowserEnabled">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+      <arg name="enabled" direction="in" type="b"/>
+    </method>
+    <signal name="ValueChanged">
+      <arg name="key" type="s"/>
+      <arg name="old_value" type="s"/>
+      <arg name="new_value" type="s"/>
+    </signal>
+  </interface>
+</node>

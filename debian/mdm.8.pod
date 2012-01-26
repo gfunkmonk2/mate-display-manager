@@ -1,0 +1,47 @@
+=head1 NAME
+
+mdm - MATE Display Manager
+
+=head1 SYNOPSIS
+
+mdm
+
+=head1 DESCRIPTION
+
+B<mdm> is the equivalent of xdm(1x) or wdm(1x), but uses the MATE
+libraries to provide a MATE look-and-feel. It provides the MATE
+equivalent of a "login:" prompt.
+
+B<mdm> reads F</etc/mdm/mdm.conf> for its configuration. For each
+local display, mdm starts an X server and runs mdmlogin(8x) on that
+display. The main mdm process also listens for XDMCP requests from
+remote displays. These requests can either be direct, causing B<mdm>
+to start a mdmlogin(8x) on the remote display, or indirect, causing
+a mdmchooser(8x) to be opened.
+
+When managing a display, B<mdm> attempts to execute
+F</etc/mdm/Init/>I<display>, or F</etc/mdm/Init/Default> if that does
+not exist. When a user logs in, B<mdm> first attempts
+F</etc/mdm/PreSession/>I<display> (or F</etc/mdm/PreSession/Default>),
+and then one of the sessions in F</etc/mdm/Sessions>. When the session
+has completed, B<mdm> attempts to run
+F</etc/mdm/PostSession/>I<display>, or
+F</etc/mdm/PostSession/>I<Default>. Of all these files, only the
+F</etc/mdm/Sessions> one is required to exist.
+
+B<mdm> maintains information about the displays it is managing in
+F</var/lib/mdm>. This includes xauth information, so this directory
+is not readable to normal users.
+
+B<mdm> uses PAM to perform authentication using the config file
+F</etc/pam.d/mdm>.
+
+=head1 AUTHOR
+
+Martin Kasper Petersen <mkp@SunSITE.auc.dk>
+
+This manual page written by Steve Haslam <araqnid@debian.org> for
+Debian GNU/Linux. Updated by Raphaël Hertzog <hertzog@debian.org>.
+Updated by Ryan Murray <rmurray@debian.org>.
+
+=cut
